@@ -5,6 +5,8 @@ return {
       "ansible-language-server",
       "ansible-lint",
       "bash-language-server",
+      "gofumpt",
+      "gopls",
       "hadolint",
       "json-lsp",
       "lua-language-server",
