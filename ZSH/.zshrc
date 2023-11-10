@@ -84,6 +84,7 @@ plugins=(
   kubectl
   kube-ps1
   docker
+  terraform
 )
 
 PROMPT='$(kube_ps1)'$PROMPT
@@ -119,3 +120,27 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Paths to Binary
+export PATH=/home/vagrant/bin:$PATH
+
+# Zonxide
+eval "$(zoxide init zsh)"
+
+# Aliases
+
+# Exa
+alias ls="exa"
+alias ll="exa -al"
+
+# Zoxide
+alias cd=z
+
+# Bat
+alias bat=cat
+
+# Tmux smart session manager
+# ~/.tmux/plugins
+export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+# ~/.config/tmux/plugins
+export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
