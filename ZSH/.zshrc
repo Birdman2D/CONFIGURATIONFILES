@@ -139,6 +139,21 @@ alias cd=z
 # Bat
 alias bat=cat
 
+# Kube
+alias kctx="kubectx"
+alias kns="kubens"
+## Istio
+alias kgivs="kubectl get virtualservice"
+alias kgig="kubectl get gateway"
+
+alias kdivs="kubectl describe virtualservice"
+alias kdig="kubectl describe gateway"
+## Certmanager
+alias kgcmc="kubectl get certificate"
+
+
+alias kdcmc="kubectl describe certificate"
+
 # Tmux smart session manager
 # ~/.tmux/plugins
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
