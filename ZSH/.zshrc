@@ -142,7 +142,13 @@ alias bat=cat
 # Kube
 alias kctx="kubectx"
 alias kns="kubens"
-alias kcc="kube-capacity" 
+
+# kube-capacity
+alias kcc="kube-capacity"
+alias kccp="kube-capacity --pods"
+alias kccu="kube-capacity --util"
+alias kcca="kube-capacity --available"
+ 
 ## Istio
 alias kgivs="kubectl get virtualservice"
 alias kgig="kubectl get gateway"
